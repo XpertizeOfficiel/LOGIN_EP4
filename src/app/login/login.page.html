@@ -1,0 +1,82 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/signup" fill="clear" strong="true" color="dark">S'inscrire</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-item lines="none">
+    <ion-label color="dark">
+      <span class="title">Connexion</span>
+      <p class="ion-text-wrap ion-text-justify">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+    </ion-label>
+  </ion-item>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="primary">
+
+  <ion-list lines="none">
+    <ion-item-group class="ion-padding">
+      <form [formGroup]="form">
+        <ion-item-group class="username">
+          <ion-item color="light">
+            <ion-input class="ion-margin-horizontal" type="text" placeholder="Prénom">
+            </ion-input>
+          </ion-item>
+          <ion-text class="error" color="danger" *ngIf="!form.get('username').valid && form.get('username').touched">
+            Please enter your Username
+          </ion-text>
+        </ion-item-group>
+
+        <ion-item-group class="ion-margin-bottom">
+          <ion-item color="light">
+            <ion-input 
+              class="ion-margin-horizontal" type="password" placeholder="Mot de passe">
+            </ion-input>
+          </ion-item>
+          <ion-text *ngIf="!form.get('password').valid && form.get('password').touched">
+            <ion-text class="error" color="danger"
+              *ngIf="form.get('password').hasError('required')">
+                Please enter the Password
+            </ion-text>
+            <ion-text class="error" color="danger"
+              *ngIf="form.get('password').hasError('minlength') 
+                && !form.get('password').hasError('required')">
+                Password must be of atleast 8 characters
+            </ion-text>
+          </ion-text>
+        </ion-item-group>
+
+        <p class="ion-text-right">
+          <ion-text>Mot de passe oublié</ion-text>
+        </p>
+
+       <div class="container-form-btn">
+          <button class="form-btn custom-font" (click)="onSubmit()">
+              SE CONNECTER
+          </button>
+        </div>
+      </form>
+    </ion-item-group>
+        <div class="hrElement">
+            <hr>
+            <h4>OR</h4>
+            <hr>
+        </div>
+        <div class="container-form-btn-fb">
+            <button class="form-btnFb custom-font-fb">
+              <img src="../../assets/img/fb.png" style="width: 20px;margin-bottom:0.4em;">&nbsp;SE CONNECTER AVEC FACEBOOK
+            </button>
+        </div>
+        <div class="container-form-btn-twitter">
+            <button class="form-btnTwitter custom-font-twitter">
+              <img src="../../assets/img/tw.jpg" style="width: 20px;margin-bottom:0.4em;">&nbsp;SE CONNECTER AVEC TWITTER
+            </button>
+        </div>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,172 @@
+ion-header {
+    background: var(--ion-color-primary);
+    ion-toolbar, ion-item {
+        --background: transparent;
+    }
+    ion-button {
+        text-transform: none;
+    }
+    ion-label {
+        padding: 0 5px;
+        .title {
+            font-weight: 800;
+            font-size: 1.5em;
+            color:#FFFFFF;
+        }
+        p {
+            font-weight: bold;
+            font-size: 1em;
+            margin-top: 1vh;
+        }
+    }
+}
+
+ion-content {
+    ion-list {
+        height: 100%;
+        border-radius: 20px 20px 0 0;
+        p {
+            font-size: 0.8em;
+        }
+        ion-item {
+            border-radius: 10px;
+            //border: 0.2px solid #000;
+            ion-input {
+                font-size: 0.9em;
+            }
+        }
+        .username {
+            margin: 20px 0 10px 0;
+        }
+        .formUser {
+            margin-bottom: 10px;
+        }
+        ion-button {
+            margin-top: 3vh;
+            ion-text {
+                font-size: 0.8em;
+            }
+        }
+        .group {
+            background: var(--ion-color-light);
+            height: 100%;
+            ion-item {
+                -webkit-box-shadow: 0 6px 4px -1px var(--ion-color-medium);
+                -moz-box-shadow: 0 6px 4px -1px var(--ion-color-medium);
+                box-shadow: 0 6px 4px -1px var(--ion-color-medium);
+                ion-label {
+                    font-weight: bold;
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+
+.error {
+    font-size: 0.75em;
+    margin-left: 1.5vh;
+}
+
+.container-form-btn-fb {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+
+.form-btnFb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 320px;
+  height: 48px;
+  background-color: #3a5999;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding-top: 5px;
+  transition: all 0.4s;
+  border:0.5px rgb(184, 183, 183) solid;
+}
+.form-btnFb:hover {
+  background-color: #28333b;
+  box-shadow: 0 10px 30px 0px rgba(57, 71, 82, 0.8);
+}
+.custom-font-fb {
+  color:#FFFFFF;
+}
+
+.container-form-btn-twitter {
+  display: flex;
+  justify-content: center;
+}
+
+.form-btnTwitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 320px;
+  height: 48px;
+  background-color: #1da1f3;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding-top: 5px;
+  transition: all 0.4s;
+  border:0.5px rgb(184, 183, 183) solid;
+}
+.form-btnTwitter:hover {
+  background-color: #28333b;
+  box-shadow: 0 10px 30px 0px rgba(57, 71, 82, 0.8);
+}
+.custom-font-twitter {
+  color:#FFFFFF;
+}
+
+.form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 320px;
+    height: 48px;
+    background-color: #1c773d;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding-top: 5px;
+    transition: all 0.4s;
+    box-shadow: 0 10px 30px 0px rgba(57, 71, 82, 0.5);
+  }
+.form-btn:hover {
+    background-color: #28333b;
+    box-shadow: 0 10px 30px 0px rgba(57, 71, 82, 0.8);
+  }
+
+
+.container-form-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+hr{
+    width: 30%;
+    background: #000;
+    font-size: large;
+}
+
+h4{
+    color:#000;
+    margin:0 3px 20px;
+}
+
+.hrElement{
+    display:flex;
+    justify-content: center;
+    margin-top:0.5em;
+}
